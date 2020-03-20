@@ -34,7 +34,7 @@ RUN export PATH=$PATH:$ANDROID_HOME/emulator\
     && export PATH=$PATH:/opt/maven/apache-maven-${MAVEN_VERSION}/bin\
     && echo PATH=$PATH:$ANDROID_HOME/platform-tools>>/etc/bash.bashrc
 # INSTALL YARN, REACT NATIVE CLI, CREATE-REACT-NATIVE-APP
-RUN npm install -g yarn && yarn global add react-native-cli create-react-native-app expo-cli
+RUN npm install -g yarn && yarn global add react-native-cli create-react-native-app
 # VOLUMES
 VOLUME ["/app","/root/.gradle"]
 # CHANGE WORKDIR
